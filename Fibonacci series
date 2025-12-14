@@ -16,3 +16,14 @@ int fibonacci_iteration(int n)
         arr[i] = arr[i - 1] + arr[i - 2];
     return arr[n];
 }
+
+int main()
+{
+    int n = 9;
+    printf("Fibonacci using recursion of %d:%d\n", n,
+           fibonacci(n));
+
+    n = 11;
+    printf("Fibonacci using iteration of %d:%d", n,
+           fibonacci_iteration(n));
+    return 0;
